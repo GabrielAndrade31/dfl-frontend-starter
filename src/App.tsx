@@ -13,6 +13,7 @@ import RestrictedAreaPage from "@/pages/RestrictedAreaPage";
 import SuppliersPage from "@/pages/SuppliersPage";
 import TaskExamplePage from "@/pages/TaskExamplePage";
 import TaskPage from "@/pages/TaskPage";
+import TaskQueryPage from "@/pages/TaskQueryPage";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -45,6 +46,7 @@ export default function App() {
                   <Route path="*" element={<NotFound />} />
                 </Route>
                 <Route path="/login" element={<Navigate to="/" replace />} />
+                <Route path="/tarefas-react-query" element={<TaskQueryPage />} />
               </Routes>
             </ErrorBoundary>
           </BrowserRouter>

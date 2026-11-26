@@ -49,6 +49,13 @@ export default function HomePage() {
   to="/tarefas"
   description="types → dummy → service → useTasks (useState) → TaskCard. Sem React Query."
 />
+<HubCard
+  title="Tarefas — passo 3 (React Query)"
+  badge="Tarefa"
+  to="/tarefas-react-query"
+  description="types → service → useGetTasks/useMutation (React Query) → TaskCard. Cache e invalidação automáticos."
+/>
+
       </section>
 
       <RestrictedLoginPanel />
